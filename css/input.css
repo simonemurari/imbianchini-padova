@@ -150,7 +150,7 @@ body {
     display: flex;
     gap: 1.5rem;
     width: max-content;
-    animation: scroll 40s linear infinite;
+    animation: scroll 22s linear infinite;
 }
 
 .carousel-track:hover {
