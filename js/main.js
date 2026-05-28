@@ -91,9 +91,15 @@ function trackContact(method) {
         }
     }
 
-    // 2. Fire the tracking event using a fast Image beacon
-    const img = new Image();
-    img.src = `${TRACKER_URL}?site=imbianchini-padova&type=${method}&page=${encodeURIComponent(page || 'home')}`;
+    const beaconUrl = `${TRACKER_URL}?site=imbianchini-padova&type=${method}&page=${encodeURIComponent(page || 'home')}`;
+
+    // 2. Fire the tracking event using sendBeacon (guaranteed to deliver) or fallback to Image
+    if (navigator.sendBeacon) {
+        navigator.sendBeacon(beaconUrl);
+    } else {
+        const img = new Image();
+        img.src = beaconUrl;
+    }
 }
 
 // Attach listeners automatically once DOM is fully loaded
