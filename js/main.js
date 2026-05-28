@@ -74,3 +74,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fadeIns.forEach(el => observer.observe(el));
 });
+
+// --- ANONYMOUS CONTACT TRACKING SYSTEM ---
+const TRACKER_URL = 'https://contact-tracker.simone-murari3.workers.dev/track';
+
+function trackContact(method) {
+    // 1. Get clean path name for page tracking
+    let page = window.location.pathname;
+    if (page === '/' || page === '/index.html' || page === '') {
+        page = 'home';
+    } else {
+        // Clean up path: /imbiancature-interne-padova/index.html -> imbiancature-interne-padova
+        page = page.replace(/^\//, '').replace(/\/$/, '').replace(/\/index\.html$/, '');
+        if (page.includes('/')) {
+            page = page.split('/').pop();
+        }
+    }
+
+    // 2. Fire the tracking event using a fast Image beacon
+    const img = new Image();
+    img.src = `${TRACKER_URL}?site=imbianchini-padova&type=${method}&page=${encodeURIComponent(page || 'home')}`;
+}
+
+// Attach listeners automatically once DOM is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Auto-track Phone clicks
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+        link.addEventListener('click', () => trackContact('phone'));
+    });
+
+    // Auto-track WhatsApp clicks
+    document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(link => {
+        link.addEventListener('click', () => trackContact('whatsapp'));
+    });
+
+    // Auto-track Email clicks
+    document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+        if (!link.closest('form')) { // Avoid double-tracking form mailto submissions
+            link.addEventListener('click', () => trackContact('email'));
+        }
+    });
+});
+

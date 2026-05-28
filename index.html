@@ -433,6 +433,12 @@
                         <script>
                             function handleFormSubmit(e) {
                                 e.preventDefault();
+                                
+                                // Track form submission anonymously
+                                if (typeof trackContact === 'function') {
+                                    trackContact('form');
+                                }
+
                                 const nome = document.getElementById('f-nome').value;
                                 const telefono = document.getElementById('f-telefono').value;
                                 const email = document.getElementById('f-email').value;

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to BIREST Stats...</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            500: '#1e6865',
+                            900: '#0c2d2b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #070a0a;
+            color: #f3f4f6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .spinner {
+            border: 3px solid rgba(255, 255, 255, 0.05);
+            border-top: 3px solid #1e6865;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    
+    <script>
+        // Redirect Configuration
+        const CENTRAL_DASHBOARD_URL = 'https://contact-tracker.simone-murari3.workers.dev';
+        const SITE_ID = 'imbianchini-padova';
+
+        window.addEventListener('DOMContentLoaded', () => {
+            // Instantly transition to the central dashboard, pre-selecting this site
+            setTimeout(() => {
+                window.location.href = `${CENTRAL_DASHBOARD_URL}/?site=${encodeURIComponent(SITE_ID)}`;
+            }, 800);
+        });
+    </script>
+</head>
+<body class="font-sans antialiased text-center px-6">
+    <div class="space-y-6 max-w-sm mx-auto">
+        <!-- Logo Spinner -->
+        <div class="flex justify-center">
+            <div class="spinner"></div>
+        </div>
+        
+        <!-- Text feedback -->
+        <div class="space-y-2">
+            <h3 class="text-lg font-bold font-outfit text-white tracking-wide">BIREST Stats</h3>
+            <p class="text-sm text-slate-400 font-light">Caricamento statistiche del sito in corso...</p>
+        </div>
+    </div>
+</body>
+</html>
