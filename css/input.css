@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@view-transition {
+    navigation: auto;
+}
+
 /* Custom Design System Styles */
 :root {
     --sage: #1e6865;

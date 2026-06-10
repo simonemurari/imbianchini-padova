@@ -9,7 +9,8 @@ module.exports = {
     "./contatti/**/*.html",
     "./imbiancature-interne-padova/**/*.html",
     "./tinteggiature-esterne-padova/**/*.html",
-    "./verniciatura-legno-padova/**/*.html"
+    "./verniciatura-legno-padova/**/*.html",
+    "./luoghi/**/*.html"
   ],
   theme: {
     extend: {

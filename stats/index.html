@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting to BIREST Stats...</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="BIREST Stats - Statistiche e monitoraggio del sito Imbianchini Padova.">
+    <link rel="canonical" href="https://imbianchinipadova.it/stats/">
+    
+    <!-- Speculation Rules API for instant same-origin navigation -->
+    <script type="speculationrules">
+    {
+      "prerender": [{
+        "where": {
+          "and": [
+            { "href_matches": "/*" },
+            { "not": { "href_matches": "/stats/*" } }
+          ]
+        },
+        "eagerness": "moderate"
+      }]
+    }
+    </script>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,7 +96,7 @@
         
         <!-- Text feedback -->
         <div class="space-y-2">
-            <h3 class="text-lg font-bold font-outfit text-white tracking-wide">BIREST Stats</h3>
+            <h1 class="text-lg font-bold font-outfit text-white tracking-wide">BIREST Stats</h1>
             <p class="text-sm text-slate-400 font-light">Caricamento statistiche del sito in corso...</p>
         </div>
     </div>

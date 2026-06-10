@@ -33,7 +33,7 @@ htmlFiles.forEach(file => {
     let relativePath = path.relative(__dirname, file).replace(/\\/g, '/');
     
     // Exclude maintenance or other auxiliary pages from indexing
-    if (relativePath === 'manutenzione.html') {
+    if (relativePath === 'manutenzione.html' || relativePath.startsWith('stats/')) {
         return;
     }
 
@@ -53,7 +53,7 @@ htmlFiles.forEach(file => {
 
         if (relativePath.startsWith('imbiancature-interne-padova') || relativePath.startsWith('tinteggiature-esterne-padova') || relativePath.startsWith('verniciatura-legno-padova')) {
             priority = '0.9';
-        } else if (relativePath.startsWith('blog')) {
+        } else if (relativePath.startsWith('blog') || relativePath.startsWith('luoghi')) {
             priority = '0.8';
         } else if (relativePath.startsWith('privacy') || relativePath.startsWith('cookie')) {
             priority = '0.3';
