@@ -72,76 +72,14 @@
       }]
     }
     </script>
-</head>
+<link href="/css/studio.css" rel="stylesheet"/></head>
 <body class="bg-slate-50 text-slate-900 overflow-x-hidden font-sans">
 <!-- Header / Navbar -->
-<header class="fixed w-full top-0 left-0 z-50 transition-all duration-200 border-b border-transparent" id="navbar">
-<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-<div class="flex items-center">
-<a aria-label="Torna alla homepage di Imbianchini Padova" class="flex items-center" href="/">
-<!-- Crisp Modern Inline SVG Logo for Padova -->
-<svg aria-label="Imbianchini Padova Logo" class="h-11 w-auto" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
-<g fill="none" stroke="#1e6865" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" transform="translate(5, 5)">
-<path d="M 5 25 L 25 5 L 45 25 M 10 20 L 10 45 L 40 45 L 40 20"></path>
-<rect fill="#1e6865" height="8" rx="2" stroke="none" width="14" x="18" y="20"></rect>
-<path d="M 25 28 L 25 38 L 22 38" stroke-width="2"></path>
-</g>
-<text fill="#0f172a" font-family="'Outfit', sans-serif" font-size="17" font-weight="800" letter-spacing="0.5" x="60" y="26">IMBIANCHINI</text>
-<text fill="#1e6865" font-family="'Outfit', sans-serif" font-size="15" font-weight="600" letter-spacing="1" x="60" y="44">PADOVA</text>
-</svg>
-</a>
-</div>
-<div class="md:hidden">
-<button aria-label="Apri menu di navigazione" class="text-slate-900 hover:text-sage-500 transition-colors" id="mobile-menu-btn">
-<i class="fas fa-bars text-2xl"></i>
-</button>
-</div>
-<div class="hidden md:flex space-x-8 items-center text-sm font-semibold tracking-wide">
-<a class="nav-link text-slate-800 hover:text-sage-500 transition-colors" href="#servizi">Servizi</a>
-<a class="nav-link text-slate-800 hover:text-sage-500 transition-colors" href="#zone">Zone Servite</a>
-<a class="nav-link text-slate-800 hover:text-sage-500 transition-colors" href="/blog/">Blog</a>
-<a class="nav-link text-slate-800 hover:text-sage-500 transition-colors" href="/contatti/">Contatti</a>
-<a aria-label="Richiedi un preventivo per tinteggiatura" class="btn-primary py-2 px-6 shadow-sm border-none text-sm" href="#contatti">Richiedi Preventivo</a>
-<a class="nav-link text-slate-800 hover:text-sage-500 transition-colors" href="/#chi-siamo">Chi siamo</a></div>
-</nav>
-</header>
+<header class="st-shell"><div class="st-wrap st-nav"><a aria-current="page" aria-label="Imbianchini Padova, homepage" class="st-brand" href="/"><span aria-hidden="true" class="st-brand-mark">⌂</span><span><b>IMBIANCHINI</b><small>Padova · Interni ed esterni</small></span></a><button aria-controls="studio-navigation" aria-expanded="false" class="st-toggle" data-st-menu="" type="button">Menu ☰</button><nav aria-label="Navigazione principale" class="st-links" hidden="" id="studio-navigation"><a href="/chi-siamo/">Chi siamo</a><details class="st-menu"><summary>Servizi</summary><div class="st-dropdown">
+<a href="/imbiancature-interne-padova/"><strong>Imbiancature interne</strong><small>Preparazione, pitture e finiture</small></a>
+<a href="/tinteggiature-esterne-padova/"><strong>Tinteggiature esterne</strong><small>Protezione e cura delle facciate</small></a>
+<a href="/verniciatura-legno-padova/"><strong>Verniciatura legno</strong><small>Travi, scuri e superfici in legno</small></a></div></details><details class="st-menu"><summary>Il colore</summary><div class="st-dropdown"><a href="/mazzetta-colori/"><strong>Mazzetta RAL / NCS</strong><small>Esplora i campioni e prova gli abbinamenti</small></a><a href="/quale-colore-scegliere/"><strong>Quale colore scegliere</strong><small>Luce, materiali e palette per la tua casa</small></a></div></details><a href="/blog/">Blog</a><a href="/#zone">Dove operiamo</a><a class="st-button" href="/#contatti">Parliamone<span aria-hidden="true">↗</span></a></nav></div></header>
 <!-- Mobile Menu Overlay -->
-<div class="fixed inset-0 z-[60] bg-white/98 backdrop-blur-xl translate-x-full transition-transform duration-300 ease-in-out md:hidden pointer-events-none" id="mobile-menu">
-<div class="flex flex-col h-full p-6">
-<div class="flex justify-between items-center mb-12">
-<svg aria-label="Imbianchini Padova Logo" class="h-10 w-auto" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
-<g fill="none" stroke="#1e6865" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" transform="translate(5, 5)">
-<path d="M 5 25 L 25 5 L 45 25 M 10 20 L 10 45 L 40 45 L 40 20"></path>
-<rect fill="#1e6865" height="8" rx="2" stroke="none" width="14" x="18" y="20"></rect>
-<path d="M 25 28 L 25 38 L 22 38" stroke-width="2"></path>
-</g>
-<text fill="#0f172a" font-family="'Outfit', sans-serif" font-size="17" font-weight="800" letter-spacing="0.5" x="60" y="26">IMBIANCHINI</text>
-<text fill="#1e6865" font-family="'Outfit', sans-serif" font-size="15" font-weight="600" letter-spacing="1" x="60" y="44">PADOVA</text>
-</svg>
-<button aria-label="Chiudi menu di navigazione" class="text-slate-900 hover:text-sage-500 transition-colors" id="close-menu-btn">
-<i class="fas fa-times text-2xl"></i>
-</button>
-</div>
-<nav class="flex flex-col space-y-6">
-<a class="mobile-nav-link text-2xl font-bold text-slate-900 hover:text-sage-500 transition-colors" href="#servizi">Servizi</a>
-<a class="mobile-nav-link text-2xl font-bold text-slate-900 hover:text-sage-500 transition-colors" href="#zone">Zone Servite</a>
-<a class="mobile-nav-link text-2xl font-bold text-slate-900 hover:text-sage-500 transition-colors" href="/blog/">Blog</a>
-<a class="mobile-nav-link text-2xl font-bold text-slate-900 hover:text-sage-500 transition-colors" href="/contatti/">Contatti</a>
-<a aria-label="Richiedi un preventivo" class="btn-primary py-4 px-6 text-center mt-6" href="#contatti">Richiedi Preventivo</a>
-<a class="nav-link text-slate-800 hover:text-sage-500 transition-colors" href="/#chi-siamo">Chi siamo</a></nav>
-<div class="mt-auto pt-8 border-t border-slate-100">
-<p class="text-xs font-bold uppercase tracking-widest text-sage-600 mb-4">Contatti</p>
-<div class="space-y-4">
-<a class="flex items-center gap-3 text-lg font-bold text-slate-900" href="tel:+393513208720">
-<i aria-hidden="true" class="fas fa-phone-alt text-sage-500"></i> +39 351 320 8720
-                    </a>
-<a class="flex items-center gap-3 text-sm font-medium text-slate-600 break-all" href="mailto:pdimbiancatura@gmail.com">
-<i aria-hidden="true" class="fas fa-envelope text-sage-500"></i> <!--email_off-->pdimbiancatura@gmail.com<!--/email_off-->
-</a>
-</div>
-</div>
-</div>
-</div>
 <!-- Hero Section -->
 <section class="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden bg-white">
 <div class="absolute inset-0 tech-grid opacity-60"></div>
@@ -221,7 +159,12 @@
 </div>
 </div>
 </div>
-</section>
+</section><section aria-labelledby="studio-home-title" class="st-home"><div class="st-wrap"><div class="st-home-top"><div><span class="st-kicker">Conosci. Esplora. Scegli.</span><h2 id="studio-home-title">Il tuo progetto,<br/>con le idee più chiare.</h2></div><p>Un buon lavoro nasce dalle scelte giuste. Ti accompagniamo, un passo alla volta.</p></div><div class="st-home-grid"><a class="st-home-card" href="/chi-siamo/"><div class="st-home-visual"><img alt="Facciata durante i lavori di tinteggiatura" height="1600" loading="lazy" src="/images/tinteggiatura-facciata-esterna-padova.webp" width="1200"/></div><div class="st-home-copy"><small>01 · La ditta</small><h3>Chi siamo</h3><p>Il metodo, la cura dei supporti e le persone a cui affidare la tua casa.</p><span class="st-inline-link">Scopri di più<span aria-hidden="true">↗</span></span></div></a><a class="st-home-card" href="/mazzetta-colori/"><div class="st-home-visual"><div aria-label="Ventaglio di campioni nelle tonalità del verde, terracotta, grigio, avorio e bianco" class="st-fan" role="img"><span class="st-fan-card" data-label="VERDE
+Naturale" style="--tone:#596b57;--angle:-32deg"></span><span class="st-fan-card" data-label="TERRA
+Avvolgente" style="--tone:#b4836d;--angle:-16deg"></span><span class="st-fan-card" data-label="GRIGIO
+Minerale" style="--tone:#c5c5b3;--angle:0deg"></span><span class="st-fan-card" data-label="AVORIO
+Luminoso" style="--tone:#e6d2b5;--angle:16deg"></span><span class="st-fan-card" data-label="BIANCO
+Essenziale" style="--tone:#f4f1e8;--angle:32deg"></span><span class="st-fan-caption">Materia, luce e sfumature · RAL / NCS</span></div></div><div class="st-home-copy"><small>02 · Esplora</small><h3>Mazzetta RAL / NCS</h3><p>Una prima idea prende colore: confronta i campioni nella stanza illustrata.</p><span class="st-inline-link">Scopri di più<span aria-hidden="true">↗</span></span></div></a><a class="st-home-card" href="/quale-colore-scegliere/"><div class="st-home-visual"><img alt="Interni con pareti tinteggiate e luce naturale" height="800" loading="lazy" src="/images/tinteggiatura-moderna-padova.webp" width="1200"/></div><div class="st-home-copy"><small>03 · Lasciati guidare</small><h3>Quale colore scegliere</h3><p>Luce, materiali e arredi: trova la direzione giusta per i tuoi ambienti.</p><span class="st-inline-link">Scopri di più<span aria-hidden="true">↗</span></span></div></a></div></div></section>
 <!-- Zone Servite Section - Premium Local Coverage Grid for Padova -->
 <section class="py-24 px-4 bg-white border-t border-slate-200 relative" id="zone">
 <div class="absolute inset-0 tech-grid opacity-30"></div>
@@ -461,7 +404,7 @@
 </div>
 </section>
 <!-- Footer -->
-<section class="py-16 px-4 bg-white border-t border-slate-200" id="chi-siamo"><div class="max-w-4xl mx-auto space-y-6 text-slate-700 leading-relaxed"><h2 class="text-3xl font-bold mb-6">Chi siamo</h2><p>BIREST è la ditta di riferimento per i servizi presentati in questo sito. Il confronto iniziale serve a definire le lavorazioni in base allo stato dell’immobile e alle esigenze di chi lo abita.</p><dl><dt><strong>Ditta</strong></dt><dd>BIREST</dd><dt><strong>Partita IVA</strong></dt><dd>04770330233</dd><dt><strong>Sede legale</strong></dt><dd>Via Are 182, 37026 Pescantina (VR)</dd></dl><p>La sede legale è distinta dall’area servita: interveniamo a Padova e provincia. Per descrivere il lavoro e concordare un sopralluogo, <a class="underline" href="#contatti">contattaci</a>.</p></div></section><section class="py-16 px-4 bg-white border-t border-slate-200" id="mazzetta-colori"><div class="max-w-4xl mx-auto space-y-6 text-slate-700 leading-relaxed"><h2 class="text-3xl font-bold mb-6">Mazzetta RAL o NCS</h2><p>Una mazzetta fisica aiuta a confrontare le tinte prima di pitturare. RAL e NCS sono sistemi diversi: il codice identifica il riferimento cromatico, mentre il risultato dipende anche da prodotto, supporto e grado di opacità.</p><div class="grid grid-cols-1 md:grid-cols-2 gap-8"><div><h3 class="text-xl font-bold mb-3">Mazzetta RAL</h3><p>RAL Classic usa codici a quattro cifre, utili per coordinare pareti, porte, radiatori e carpenterie. RAL 9010 e RAL 9016, per esempio, sono due bianchi differenti: confrontali vicino a infissi e soffitto invece di sceglierli dal solo nome.</p></div><div><h3 class="text-xl font-bold mb-3">Mazzetta NCS</h3><p>NCS descrive il colore attraverso nerezza, cromaticità e tonalità. Nel codice S 2005-Y20R, 20 indica la nerezza e 05 la cromaticità; Y20R indica un giallo con una componente rossa del 20%. È utile per confrontare neutri e sottotoni.</p></div></div><p>Le immagini a schermo sono indicative. Chiedi una campionatura con la pittura prevista e controllala sulla parete: non esiste una conversione automatica esatta tra RAL, NCS e Pantone.</p><div aria-label="Campioni RAL indicativi" class="grid grid-cols-1 md:grid-cols-3 gap-8"><div style="border:1px solid #cbd5e1;padding:12px"><div aria-hidden="true" style="height:88px;background:#f4f1e8;margin-bottom:12px"></div><p><strong>RAL 9010</strong><br/>Bianco puro</p></div><div style="border:1px solid #cbd5e1;padding:12px"><div aria-hidden="true" style="height:88px;background:#f6f6f2;margin-bottom:12px"></div><p><strong>RAL 9016</strong><br/>Bianco traffico</p></div><div style="border:1px solid #cbd5e1;padding:12px"><div aria-hidden="true" style="height:88px;background:#e6d2b5;margin-bottom:12px"></div><p><strong>RAL 1015</strong><br/>Avorio chiaro</p></div><div style="border:1px solid #cbd5e1;padding:12px"><div aria-hidden="true" style="height:88px;background:#b8b799;margin-bottom:12px"></div><p><strong>RAL 7032</strong><br/>Grigio ghiaia</p></div><div style="border:1px solid #cbd5e1;padding:12px"><div aria-hidden="true" style="height:88px;background:#cac4b0;margin-bottom:12px"></div><p><strong>RAL 7044</strong><br/>Grigio seta</p></div><div style="border:1px solid #cbd5e1;padding:12px"><div aria-hidden="true" style="height:88px;background:#4d5645;margin-bottom:12px"></div><p><strong>RAL 7009</strong><br/>Grigio verdastro</p></div></div><p class="text-sm">I campioni digitali sono approssimazioni illustrative, non riferimenti colorimetrici ufficiali. Per confermare la tinta confronta una mazzetta RAL fisica e una prova della pittura scelta.</p></div></section><section class="py-16 px-4 bg-white border-t border-slate-200" id="quale-colore-scegliere"><div class="max-w-4xl mx-auto space-y-6 text-slate-700 leading-relaxed"><h2 class="text-3xl font-bold mb-6">Quale colore scegliere</h2><p>Parti dagli elementi che rimangono: pavimento, porte, cucina, divano e tende. Appoggia i campioni accanto a questi materiali e osserva se i sottotoni sono caldi, freddi o neutri.</p><ol class="space-y-3"><li><strong>1. Luce naturale:</strong> controlla le pareti al mattino e nel pomeriggio. Negli ambienti poco illuminati prova tinte chiare prima di scegliere colori molto saturi.</li><li><strong>2. Illuminazione serale:</strong> prova il campione con le lampade effettive. Temperatura di colore e resa cromatica modificano la percezione della tinta.</li><li><strong>3. Finitura:</strong> l’opaco attenua i riflessi ma non corregge le irregolarità del fondo. Valuta la resistenza al lavaggio in base all’uso della stanza.</li><li><strong>4. Prova in opera:</strong> realizza un campione ampio, possibilmente su due pareti con esposizione diversa, e attendi l’asciugatura indicata dal produttore.</li></ol><p>Conserva codice, marca, linea, finitura e lotto della pittura: sono informazioni utili per manutenzione e ritocchi futuri.</p><p><a class="underline font-bold" href="/blog/accostamenti-colore-luci-mobili/">Leggi la guida agli accostamenti, al colore dell’anno e agli abbinamenti con luci e mobili</a>.</p></div></section><section class="py-16 px-4 bg-white border-t border-slate-200" id="metodo-tecnico"><div class="max-w-4xl mx-auto space-y-6 text-slate-700 leading-relaxed"><h2 class="text-3xl font-bold mb-6">Il metodo tecnico: dal supporto alla manutenzione</h2><h3 class="text-xl font-bold">Preparare il fondo prima del colore</h3><p>Verifica adesione della vecchia pittura, polverosità e assorbimento. Le parti incoerenti vanno rimosse; stuccature e rasature devono asciugare prima della carteggiatura. Il primer va scelto per il supporto e per il ciclo, evitando applicazioni eccessive che possono creare superfici lucide e poco aderenti.</p><h3 class="text-xl font-bold">Prestazioni e manutenzione</h3><p>Confronta in scheda tecnica resistenza allo sfregamento a umido, copertura e brillantezza: “lavabile” da solo non descrive tutte le prestazioni. Rispetta diluizione e tempi di ricopertura. La pittura antimuffa non sostituisce la ricerca di infiltrazioni, condensa o ponti termici.</p><p>Conserva il riferimento della tinta e pulisci soltanto dopo la maturazione del film prevista dal produttore, usando detergenti compatibili e senza abrasivi.</p><p><a class="underline" href="/blog/">Approfondisci nel blog</a> oppure consulta i servizi per conoscere il ciclo adatto a interni, facciate e legno.</p></div></section><footer class="bg-slate-50 text-slate-900 py-16 px-4 border-t border-slate-200 mt-20">
+<footer class="bg-slate-50 text-slate-900 py-16 px-4 border-t border-slate-200 mt-20">
 <div class="max-w-7xl mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12 text-left">
 <div class="col-span-1">
@@ -493,7 +436,7 @@
 <li><a class="text-slate-600 hover:text-sage-500 transition-colors text-sm" href="/#zone">Zone Servite</a></li>
 <li><a class="text-slate-600 hover:text-sage-500 transition-colors text-sm" href="/blog/">Articoli e Blog</a></li>
 <li><a class="text-slate-600 hover:text-sage-500 transition-colors text-sm" href="/contatti/">Contatti</a></li>
-</ul>
+<li><a class="text-slate-600 hover:text-sage-500 transition-colors text-sm" href="/chi-siamo/">Chi siamo</a></li><li><a class="text-slate-600 hover:text-sage-500 transition-colors text-sm" href="/mazzetta-colori/">Mazzetta RAL / NCS</a></li><li><a class="text-slate-600 hover:text-sage-500 transition-colors text-sm" href="/quale-colore-scegliere/">Quale colore scegliere</a></li></ul>
 </div>
 <div>
 <h4 class="text-xs font-bold uppercase tracking-widest text-sage-600 mb-4">Info Legali</h4>
@@ -526,7 +469,7 @@
 </div>
 </div>
 </div>
-<a class="inline-block mt-4 underline" href="/#chi-siamo">Chi siamo</a></footer>
+</footer>
 <script defer="" src="js/main.js?v=1.0"></script>
-</body>
+<script defer="" src="/js/studio.js"></script></body>
 </html>

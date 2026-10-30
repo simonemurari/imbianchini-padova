@@ -41,74 +41,14 @@
       }]
     }
     </script>
-</head>
+<link href="/css/studio.css" rel="stylesheet"/></head>
 <body class="bg-slate-50 text-slate-900 overflow-x-hidden font-sans">
-<header class="fixed w-full z-50 transition-all duration-200 border-b border-slate-200 bg-white/98" id="navbar">
-<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-<div class="flex items-center">
-<a aria-label="Torna alla homepage di Imbianchini Padova" class="flex items-center" href="/">
-<svg aria-label="Imbianchini Padova Logo" class="h-11 w-auto" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
-<g fill="none" stroke="#1e6865" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" transform="translate(5, 5)">
-<path d="M 5 25 L 25 5 L 45 25 M 10 20 L 10 45 L 40 45 L 40 20"></path>
-<rect fill="#1e6865" height="8" rx="2" stroke="none" width="14" x="18" y="20"></rect>
-<path d="M 25 28 L 25 38 L 22 38" stroke-width="2"></path>
-</g>
-<text fill="#0f172a" font-family="'Outfit', sans-serif" font-size="17" font-weight="800" letter-spacing="0.5" x="60" y="26">IMBIANCHINI</text>
-<text fill="#1e6865" font-family="'Outfit', sans-serif" font-size="15" font-weight="600" letter-spacing="1" x="60" y="44">PADOVA</text>
-</svg>
-</a>
-</div>
-<div class="md:hidden">
-<button aria-label="Apri menu di navigazione" class="text-slate-900 hover:text-sage-500 transition-colors" id="mobile-menu-btn">
-<i class="fas fa-bars text-2xl"></i>
-</button>
-</div>
-<div class="hidden md:flex space-x-8 items-center text-sm font-semibold tracking-wide">
-<a class="nav-link text-slate-800 hover:text-sage-500 transition-colors" href="/#servizi">Servizi</a>
-<a class="nav-link text-slate-800 hover:text-sage-500 transition-colors" href="/#zone">Zone Servite</a>
-<a class="nav-link text-slate-800 hover:text-sage-500 transition-colors" href="/blog/">Blog</a>
-<a class="nav-link text-slate-800 hover:text-sage-500 transition-colors" href="/contatti/">Contatti</a>
-<a aria-label="Richiedi un preventivo" class="btn-primary py-2 px-6 shadow-sm border-none text-sm" href="/#contatti">Preventivo</a>
-</div>
-</nav>
-</header>
+<header class="st-shell"><div class="st-wrap st-nav"><a aria-label="Imbianchini Padova, homepage" class="st-brand" href="/"><span aria-hidden="true" class="st-brand-mark">⌂</span><span><b>IMBIANCHINI</b><small>Padova · Interni ed esterni</small></span></a><button aria-controls="studio-navigation" aria-expanded="false" class="st-toggle" data-st-menu="" type="button">Menu ☰</button><nav aria-label="Navigazione principale" class="st-links" hidden="" id="studio-navigation"><a href="/chi-siamo/">Chi siamo</a><details class="st-menu"><summary>Servizi</summary><div class="st-dropdown">
+<a href="/imbiancature-interne-padova/"><strong>Imbiancature interne</strong><small>Preparazione, pitture e finiture</small></a>
+<a href="/tinteggiature-esterne-padova/"><strong>Tinteggiature esterne</strong><small>Protezione e cura delle facciate</small></a>
+<a href="/verniciatura-legno-padova/"><strong>Verniciatura legno</strong><small>Travi, scuri e superfici in legno</small></a></div></details><details class="st-menu"><summary>Il colore</summary><div class="st-dropdown"><a href="/mazzetta-colori/"><strong>Mazzetta RAL / NCS</strong><small>Esplora i campioni e prova gli abbinamenti</small></a><a href="/quale-colore-scegliere/"><strong>Quale colore scegliere</strong><small>Luce, materiali e palette per la tua casa</small></a></div></details><a href="/blog/">Blog</a><a href="/#zone">Dove operiamo</a><a class="st-button" href="/#contatti">Parliamone<span aria-hidden="true">↗</span></a></nav></div></header>
 <!-- Mobile Menu Overlay -->
-<div class="fixed inset-0 z-[60] bg-white/98 backdrop-blur-xl translate-x-full transition-transform duration-300 ease-in-out md:hidden pointer-events-none" id="mobile-menu">
-<div class="flex flex-col h-full p-6">
-<div class="flex justify-between items-center mb-12">
-<svg aria-label="Imbianchini Padova Logo" class="h-10 w-auto" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
-<g fill="none" stroke="#1e6865" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" transform="translate(5, 5)">
-<path d="M 5 25 L 25 5 L 45 25 M 10 20 L 10 45 L 40 45 L 40 20"></path>
-<rect fill="#1e6865" height="8" rx="2" stroke="none" width="14" x="18" y="20"></rect>
-<path d="M 25 28 L 25 38 L 22 38" stroke-width="2"></path>
-</g>
-<text fill="#0f172a" font-family="'Outfit', sans-serif" font-size="17" font-weight="800" letter-spacing="0.5" x="60" y="26">IMBIANCHINI</text>
-<text fill="#1e6865" font-family="'Outfit', sans-serif" font-size="15" font-weight="600" letter-spacing="1" x="60" y="44">PADOVA</text>
-</svg>
-<button aria-label="Chiudi menu di navigazione" class="text-slate-900 hover:text-sage-500 transition-colors" id="close-menu-btn">
-<i class="fas fa-times text-2xl"></i>
-</button>
-</div>
-<nav class="flex flex-col space-y-6">
-<a class="mobile-nav-link text-2xl font-bold text-slate-900 hover:text-sage-500 transition-colors" href="/#servizi">Servizi</a>
-<a class="mobile-nav-link text-2xl font-bold text-slate-900 hover:text-sage-500 transition-colors" href="/#zone">Zone Servite</a>
-<a class="mobile-nav-link text-2xl font-bold text-slate-900 hover:text-sage-500 transition-colors" href="/blog/">Blog</a>
-<a class="mobile-nav-link text-2xl font-bold text-slate-900 hover:text-sage-500 transition-colors" href="/contatti/">Contatti</a>
-<a aria-label="Richiedi un preventivo" class="btn-primary py-4 px-6 text-center mt-6" href="/#contatti">Preventivo</a>
-</nav>
-<div class="mt-auto pt-8 border-t border-slate-100">
-<p class="text-xs font-bold uppercase tracking-widest text-sage-600 mb-4">Contatti</p>
-<div class="space-y-4">
-<a class="flex items-center gap-3 text-lg font-bold text-slate-900" href="tel:+393513208720">
-<i aria-hidden="true" class="fas fa-phone-alt text-sage-500"></i> +39 351 320 8720
-                    </a>
-<a class="flex items-center gap-3 text-sm font-medium text-slate-600 break-all" href="mailto:pdimbiancatura@gmail.com">
-<i aria-hidden="true" class="fas fa-envelope text-sage-500"></i> <!--email_off-->pdimbiancatura@gmail.com<!--/email_off-->
-</a>
-</div>
-</div>
-</div>
-</div>
+
 <main class="pt-44 pb-24 px-4 bg-slate-50 min-h-[60vh] flex items-center justify-center">
 <div class="max-w-3xl w-full mx-auto text-center space-y-8 bg-white p-8 md:p-12 rounded-sm border border-slate-200 shadow-xs">
 <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900">Imbianchino a San Martino di Lupari</h1>
@@ -122,7 +62,7 @@
 </div>
 </div>
 </main>
-<section class="py-16 px-4 bg-white border-t border-slate-200"><div class="max-w-4xl mx-auto space-y-6 text-slate-700 leading-relaxed"><h2 class="text-3xl font-bold mb-6">Come impostare il lavoro nella tua casa</h2><p>Per preparare l’intervento servono informazioni su supporti, vecchie finiture, eventuale umidità e uso degli ambienti. La scelta della pittura segue la verifica del fondo, la preparazione e una prova colore: copertura e resistenza al lavaggio vanno confrontate in scheda tecnica.</p><p><a class="underline" href="/imbiancature-interne-padova/">Preparazione e pitture per interni</a> · <a class="underline" href="/tinteggiature-esterne-padova/">Cicli per facciate</a> · <a class="underline" href="/#quale-colore-scegliere">Scelta del colore</a></p></div></section><footer class="bg-slate-50 text-slate-900 py-16 px-4 border-t border-slate-200">
+<section class="py-16 px-4 bg-white border-t border-slate-200"><div class="max-w-4xl mx-auto space-y-6 text-slate-700 leading-relaxed"><h2 class="text-3xl font-bold mb-6">Come impostare il lavoro nella tua casa</h2><p>Per preparare l’intervento servono informazioni su supporti, vecchie finiture, eventuale umidità e uso degli ambienti. La scelta della pittura segue la verifica del fondo, la preparazione e una prova colore: copertura e resistenza al lavaggio vanno confrontate in scheda tecnica.</p><p><a class="underline" href="/imbiancature-interne-padova/">Preparazione e pitture per interni</a> · <a class="underline" href="/tinteggiature-esterne-padova/">Cicli per facciate</a> · <a class="underline" href="/quale-colore-scegliere/">Scelta del colore</a></p></div></section><footer class="bg-slate-50 text-slate-900 py-16 px-4 border-t border-slate-200">
 <div class="max-w-7xl mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12 text-left">
 <div class="col-span-1">
@@ -154,7 +94,7 @@
 <li><a class="text-slate-600 hover:text-sage-500 transition-colors text-sm" href="/#zone">Zone Servite</a></li>
 <li><a class="text-slate-600 hover:text-sage-500 transition-colors text-sm" href="/blog/">Articoli e Blog</a></li>
 <li><a class="text-slate-600 hover:text-sage-500 transition-colors text-sm" href="/contatti/">Contatti</a></li>
-</ul>
+<li><a class="text-slate-600 hover:text-sage-500 transition-colors text-sm" href="/chi-siamo/">Chi siamo</a></li><li><a class="text-slate-600 hover:text-sage-500 transition-colors text-sm" href="/mazzetta-colori/">Mazzetta RAL / NCS</a></li><li><a class="text-slate-600 hover:text-sage-500 transition-colors text-sm" href="/quale-colore-scegliere/">Quale colore scegliere</a></li></ul>
 </div>
 <div>
 <h4 class="text-xs font-bold uppercase tracking-widest text-sage-600 mb-4">Info Legali</h4>
@@ -170,7 +110,7 @@
 </div>
 </div>
 </div>
-<a class="inline-block mt-4 underline" href="/#chi-siamo">Chi siamo</a></footer>
+</footer>
 <script defer="" src="../../js/main.js"></script>
-</body>
+<script defer="" src="/js/studio.js"></script></body>
 </html>
