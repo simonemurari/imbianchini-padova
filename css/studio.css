@@ -42,3 +42,7 @@ body.st-masonry{--st-ink:#33382d;--st-accent:#79541c;--st-soft:#eee8d9;--st-clay
 @media(prefers-reduced-motion:reduce){.st-page *,.st-home *{scroll-behavior:auto!important;transition:none!important}.st-button:hover,.st-home-card:hover{transform:none}}
 
 .st-page [id]{scroll-margin-top:110px}.st-menu:has(a[aria-current=page])>summary{color:var(--st-accent)}
+
+/* Keep the original brand artwork at its established header size. */
+.st-brand>svg{display:block;height:44px;width:176px;max-width:100%;flex-shrink:0}.st-footer .st-brand>svg{height:40px;width:160px}
+@media(max-width:760px){.st-brand>svg{height:40px;width:160px}}

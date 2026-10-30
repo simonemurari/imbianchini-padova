@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   if(toggle&&navigation){
     const close=()=>{navigation.hidden=true;toggle.setAttribute('aria-expanded','false');toggle.textContent='Menu ☰';};
     toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';navigation.hidden=!open;toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Chiudi ×':'Menu ☰';});
-    document.addEventListener('keydown',event=>{if(event.key==='Escape'){close();document.querySelectorAll('.st-menu[open]').forEach(x=>x.open=false);toggle.focus();}});
+    document.addEventListener('keydown',event=>{if(event.key!=='Escape')return;const openMenu=document.querySelector('.st-menu[open]');if(openMenu){openMenu.open=false;openMenu.querySelector('summary').focus();}else if(toggle.getAttribute('aria-expanded')==='true'){close();toggle.focus();}});
     navigation.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
     document.addEventListener('click',event=>{if(!event.target.closest('.st-shell')){close();document.querySelectorAll('.st-menu[open]').forEach(x=>x.open=false);}});
   }
